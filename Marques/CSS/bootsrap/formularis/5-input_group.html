@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Input Group</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col-6">
+				<!-- Input Group -->				
+				<div class="input-group mb-3">
+					<input type="text" class="form-control" placeholder="Nom" aria-label="Nom">										
+					<span class="input-group-text">@gmail.com</span>
+				</div>
+
+				<!-- Textarea -->
+				<div class="input-group mb-3">
+					<span class="input-group-text">Notes:</span>
+					<textarea class="form-control" name="" id="label-notes" aria-label="Notes"></textarea>
+				</div>
+
+				<!-- Input Group amb varis elements -->
+				<div class="input-group mb-3">
+					<span class="input-group-text">Nom</span>
+					<input type="text" class="form-control" aria-label="Nom">
+
+					<span class="input-group-text">Cognom</span>
+					<input type="text" class="form-control" aria-label="Cognom">
+				</div>
+			</div>
+
+			<div class="col-6">
+				<div class="input-group input-group-sm mb-3">
+					<span class="input-group-text">Petit</span>
+					<input type="text" class="form-control" aria-label="Nom">
+				</div>
+				<div class="input-group input-group-lg mb-3">
+					<span class="input-group-text">Gran</span>
+					<input type="text" class="form-control" aria-label="Nom">
+				</div>
+
+				<div class="input-group">
+					<label for="pais" class="input-group-text">Pais</label>
+					<select name="" id="pais" class="form-select">
+						<option value="nauru">Nauru</option>
+						<option value="tuvalu">Tuvalu</option>
+						<option value="marshall">Marshall</option>
+					</select>
+					<button class="btn btn-primary">Enviar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

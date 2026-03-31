@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Floating Labels</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col-6">
+			<div class="form-floating mb-3">
+					<input type="text" name="nom" id="nom" class="form-control" placeholder="">					
+					<label for="nom">nom</label>
+				</div>
+				<div class="form-floating mb-3">
+					<textarea name="notes" id="notes" class="form-control" placeholder="notes"></textarea>
+					<label for="notes">notes</label>
+				</div>
+
+				<div class="form-floating mb-3">
+					<select name="pais" id="pais" class="form-select">
+						<option selected>Selecciona una opcio</option>
+						<option value="nauru">Nauru</option>
+						<option value="tuvalu">Tuvalu</option>
+						<option value="marshall">Marshall</option>
+					</select>
+					<label for="pais">Selecciona un pais</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

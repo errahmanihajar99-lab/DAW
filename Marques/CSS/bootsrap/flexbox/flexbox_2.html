@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flexbox 2</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<style>
+		.contenidor {
+			margin-bottom: 20px;
+			background: #0d6efd;
+			color: #fff;
+			height: 100px;
+		}
+
+		.contenidor > div {
+			background: rgba(255,255,255, .2);
+			padding: 15px;
+			border: 1px solid #0d6efd;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row my-5">
+			<div class="col">
+				<h4>Fill</h4>
+				<hr>
+				<div class="contenidor d-flex align-items-start">
+					<div>Lorem ipsum dolor sit amet.</div>
+					<div class="flex-fill">.flex-fill</div>
+					<div class="flex-fill">.flex-fill</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-5">
+			<div class="col">
+				<h4>Align Items</h4>
+				<hr>
+				<p>.align-items-start</p>
+				<div class="contenidor d-flex align-items-start">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+				</div>
+
+				<p>.align-items-center</p>
+				<div class="contenidor d-flex align-items-center">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+				</div>
+
+				<p>.align-items-end</p>
+				<div class="contenidor d-flex align-items-end">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+				</div>
+
+				<p>.align-items-baseline</p>
+				<div class="contenidor d-flex align-items-baseline">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+				</div>
+
+				<p>.align-items-strech</p>
+				<div class="contenidor d-flex align-items-strech">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-5">
+			<div class="col">
+				<h4>Align Self</h4>
+				<hr>
+				<div class="contenidor d-flex">
+					<div class="align-self-start">.align-self-start</div>
+					<div class="align-self-center">.align-self-center</div>
+					<div class="align-self-end">.align-self-end</div>
+					<div class="align-self-baseline">.align-self-baseline</div>
+					<div class="align-self-stretch">.align-self-stretch</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-5">
+			<div class="col">
+				<h4>Auto Margins</h4>
+				<hr>
+
+				<div class="contenidor d-flex justify-content-end">
+					<div class="me-auto">.me-auto</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+				</div>
+
+				<div class="contenidor d-flex justify-content-start">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div class="ms-auto">.ms-auto</div>
+				</div>
+
+				<div class="contenidor d-flex flex-column align-items-start" style="height: 250px;">
+					<div class="mb-auto">.mb-auto</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+				</div>
+
+				<div class="contenidor d-flex flex-column align-items-end" style="height: 250px;">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div class="mt-auto">.mt-auto</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

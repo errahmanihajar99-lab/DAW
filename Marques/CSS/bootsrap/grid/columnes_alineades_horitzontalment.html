@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title>Columnes Alineades Horitzontalment</title>
+	<style>
+		.row {
+			background: #e8e8e8;
+			margin-top: 20px;
+		}
+
+		.columna {
+			background: #f2f2f2;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #4d5061;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-start">				<!-- alineat a l'inici -->
+			<div class="columna col-4">Columna 1</div>		<!-- div.columna.col-4{Columna $} i premem Enter-->
+			<div class="columna col-4">Columna 2</div>
+		</div>
+
+		<div class="row justify-content-center">			<!-- alineat al centre -->
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+
+		<div class="row justify-content-end">				<!-- alineat al final -->
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+
+		<div class="row justify-content-around">			<!-- distribueix l'espai lliure -->
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+
+		<div class="row justify-content-between">			<!-- tot l'espai que sobre entre els dos elements -->
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+
+		<div class="d-flex row justify-content-evenly">			<!-- reparteix l'espai de forma equitativa -->
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+	</div>
+
+	<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

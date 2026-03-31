@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formularis</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col-6"> 
+				<form action="">
+					<div class="mb-3">
+						<label for="correu" class="form-label">correu electronic</label>
+						<input type="text" class="form-control" id="correu" aria-describedby="ajuda-correu">
+						<div id="ajuda-correu" class="form-text">
+							T'enviarem un missatge de confirmació.
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="missatge" class="form-label">Missatge</label>
+						<textarea class="form-control" name="missatge" id="missatge"></textarea>
+					</div>
+
+					<button type="submit" class="btn btn-primary">Enviar Comentari</button>
+				</form>
+			</div>
+
+			<div class="col-6">
+				<form action="">
+					<input type="text" class="form-control form-control-lg mb-3" placeholder="Input Gran">
+					<input type="text" class="form-control form-control-sm mb-3" placeholder="Input Petit">
+					<input type="text" class="form-control mb-3" placeholder="Input Deshabilitat" disabled>
+					<input type="text" class="form-control mb-3" placeholder="Input nomes lectura" readonly>
+					<input type="text" class="form-control-plaintext mb-3" placeholder="Input nomes lectura" readonly>
+					<input type="file" class="form-control" name="" id="">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

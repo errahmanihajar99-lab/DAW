@@ -1,0 +1,39 @@
+div {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+}
+
+.quadrat1:hover {
+    transform: scale(1.5,1.5) skew(-15deg);
+
+}
+
+.quadrat2 {
+    transition: border-radius 1s;
+}
+
+.quadrat2:hover {
+    border-radius: 50px;
+}
+
+.quadrat3:hover {
+    animation-name: quadrat;
+    animation-duration: 3.5s;
+    animation-iteration-count:infinite ;
+}
+
+@keyframes quadrat {
+    from{transform: skew(0deg);}
+    10%{transform: skew(45deg);}
+    20%{transform: skew(0deg);}
+    30%{transform: skewY(45deg);}
+    40%{transform: skewY(0deg);}
+    50%{transform: skew(-45deg);}
+    60%{transform: skew(0deg);}
+    70%{transform: skewY(-45deg);}
+    80%{transform: skewY(0deg);}
+    to{transform: skew(0deg);}
+}

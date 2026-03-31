@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flexbox 3</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<style>
+		.contenidor {
+			margin-bottom: 20px;
+			background: #0d6efd;
+			color: #fff;
+			min-height: 100px;
+		}
+
+		.contenidor > div {
+			background: rgba(255,255,255, .2);
+			padding: 15px 20px;
+			border: 1px solid #0d6efd;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row my-5">
+			<div class="col">
+				<h4>Wrap</h4>
+				<hr>
+				<p>.flex-nowrap</p>
+				<div class="contenidor d-flex flex-nowrap">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+					<div>Caixa 4</div>
+					<div>Caixa 5</div>
+					<div>Caixa 6</div>
+					<div>Caixa 7</div>
+					<div>Caixa 8</div>
+					<div>Caixa 9</div>
+					<div>Caixa 10</div>
+					<div>Caixa 11</div>
+					<div>Caixa 12</div>
+					<div>Caixa 13</div>
+					<div>Caixa 14</div>
+					<div>Caixa 15</div>
+				</div>
+
+				<p>.flex-wrap</p>
+				<div class="contenidor d-flex flex-wrap">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+					<div>Caixa 4</div>
+					<div>Caixa 5</div>
+					<div>Caixa 6</div>
+					<div>Caixa 7</div>
+					<div>Caixa 8</div>
+					<div>Caixa 9</div>
+					<div>Caixa 10</div>
+					<div>Caixa 11</div>
+					<div>Caixa 12</div>
+					<div>Caixa 13</div>
+					<div>Caixa 14</div>
+					<div>Caixa 15</div>
+				</div>
+
+				<p>.flex-wrap-reverse</p>
+				<div class="contenidor d-flex flex-wrap-reverse">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+					<div>Caixa 4</div>
+					<div>Caixa 5</div>
+					<div>Caixa 6</div>
+					<div>Caixa 7</div>
+					<div>Caixa 8</div>
+					<div>Caixa 9</div>
+					<div>Caixa 10</div>
+					<div>Caixa 11</div>
+					<div>Caixa 12</div>
+					<div>Caixa 13</div>
+					<div>Caixa 14</div>
+					<div>Caixa 15</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-5">
+			<div class="col">
+				<h4>Order</h4>
+				<hr>
+
+				<div class="contenidor d-flex flex-nowrap">
+					<div class="order-2">Caixa 1</div>
+					<div class="order-3">Caixa 2</div>
+					<div class="order-1">Caixa 3</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-5">
+			<div class="col">
+				<h4>Align Content</h4>
+				<hr>
+
+				<p>.align-content-start</p>
+				<div class="contenidor d-flex flex-wrap align-content-start" style="height: 200px;">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+					<div>Caixa 4</div>
+					<div>Caixa 5</div>
+					<div>Caixa 6</div>
+					<div>Caixa 7</div>
+					<div>Caixa 8</div>
+					<div>Caixa 9</div>
+					<div>Caixa 10</div>
+					<div>Caixa 11</div>
+					<div>Caixa 12</div>
+					<div>Caixa 13</div>
+					<div>Caixa 14</div>
+					<div>Caixa 15</div>
+				</div>
+
+				<p>.align-content-center</p>
+				<div class="contenidor d-flex flex-wrap align-content-center" style="height: 200px;">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+					<div>Caixa 4</div>
+					<div>Caixa 5</div>
+					<div>Caixa 6</div>
+					<div>Caixa 7</div>
+					<div>Caixa 8</div>
+					<div>Caixa 9</div>
+					<div>Caixa 10</div>
+					<div>Caixa 11</div>
+					<div>Caixa 12</div>
+					<div>Caixa 13</div>
+					<div>Caixa 14</div>
+					<div>Caixa 15</div>
+				</div>
+
+				<p>.align-content-end</p>
+				<div class="contenidor d-flex flex-wrap align-content-end" style="height: 200px;">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+					<div>Caixa 4</div>
+					<div>Caixa 5</div>
+					<div>Caixa 6</div>
+					<div>Caixa 7</div>
+					<div>Caixa 8</div>
+					<div>Caixa 9</div>
+					<div>Caixa 10</div>
+					<div>Caixa 11</div>
+					<div>Caixa 12</div>
+					<div>Caixa 13</div>
+					<div>Caixa 14</div>
+					<div>Caixa 15</div>
+				</div>
+
+				<p>.align-content-between</p>
+				<div class="contenidor d-flex flex-wrap align-content-between" style="height: 200px;">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+					<div>Caixa 4</div>
+					<div>Caixa 5</div>
+					<div>Caixa 6</div>
+					<div>Caixa 7</div>
+					<div>Caixa 8</div>
+					<div>Caixa 9</div>
+					<div>Caixa 10</div>
+					<div>Caixa 11</div>
+					<div>Caixa 12</div>
+					<div>Caixa 13</div>
+					<div>Caixa 14</div>
+					<div>Caixa 15</div>
+				</div>
+
+				<p>.align-content-around</p>
+				<div class="contenidor d-flex flex-wrap align-content-around" style="height: 200px;">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+					<div>Caixa 4</div>
+					<div>Caixa 5</div>
+					<div>Caixa 6</div>
+					<div>Caixa 7</div>
+					<div>Caixa 8</div>
+					<div>Caixa 9</div>
+					<div>Caixa 10</div>
+					<div>Caixa 11</div>
+					<div>Caixa 12</div>
+					<div>Caixa 13</div>
+					<div>Caixa 14</div>
+					<div>Caixa 15</div>
+				</div>
+
+				<p>.align-content-stretch</p>
+				<div class="contenidor d-flex flex-wrap align-content-stretch" style="height: 200px;">
+					<div>Caixa 1</div>
+					<div>Caixa 2</div>
+					<div>Caixa 3</div>
+					<div>Caixa 4</div>
+					<div>Caixa 5</div>
+					<div>Caixa 6</div>
+					<div>Caixa 7</div>
+					<div>Caixa 8</div>
+					<div>Caixa 9</div>
+					<div>Caixa 10</div>
+					<div>Caixa 11</div>
+					<div>Caixa 12</div>
+					<div>Caixa 13</div>
+					<div>Caixa 14</div>
+					<div>Caixa 15</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
