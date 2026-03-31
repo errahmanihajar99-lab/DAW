@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+  <llista nom="Rock Classics" data="2024-03-20">
+    <canco track="1">
+      <titol><![CDATA[Peace & War]]></titol>
+      <autor>The Artists</autor>
+      <durada>3:45</durada>
+    </canco>
+    <canco track="2">
+      <titol>Thunder</titol>
+      <autor>Imagine</autor>
+      <durada>4:10</durada>
+    </canco>
+  </llista>
+  </biblioteca>

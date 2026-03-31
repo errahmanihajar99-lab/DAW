@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 2. Detecció i resolució d'errors-->
+ <!-- Errors trobats:
+
+    - Versió XML: La versió actual estàndard és 1.0. La 2.0 no existeix oficialment.
+    - Atributs sense cometes: lang=cat ha de ser lang="cat".
+    - Etiquetes mal tancades: <from> es tanca amb </From> (XML és case-sensitive).
+    - Estructura niada: L'etiqueta <subject> està dins de <to>, cosa que no té sentit lògic.
+    - Múltiples arrels: Un fitxer XML només pot tenir un element arrel. Aquí hi ha dos <memo>. S'han d'agrupar.-->
+ <!-- Codi corregit:-->
+<memos>
+    <memo lang="cat">
+        <to>Joan</to>
+        <from>Carme</from>
+        <cc></cc>
+        <subject>Capitol 1: XML Intercharge Format</subject>
+    </memo>
+    <memo>
+        <to>Carme</to>
+        <subject>Capítol 2: JSON Intercharge Format</subject>
+    </memo>
+</memos>

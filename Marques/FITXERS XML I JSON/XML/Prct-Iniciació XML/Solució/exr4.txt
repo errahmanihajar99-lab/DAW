@@ -1,0 +1,13 @@
+4. Els namespaces en XML
+ a. Namespace: És un mecanisme per evitar conflictes de noms en un document XML. 
+ b. Diferència entre explícit i per defecte:
+
+    - Namespace per defecte (xmlns="URL"): S'aplica a l'element que el declara i a tots els seus fills que no tinguin un prefix.
+    S'utilitza quan la majoria d'elements pertanyen al mateix domini.
+
+    - Namespace explícit (xmlns:prefix="URL"): Requereix l'ús d'un prefix (ex: treb:nom).
+    S'utilitza quan barregem diverses fonts de dades en un mateix nivell i volem ser molt específics.
+
+ c. <treb:codi>2323</treb:codi>: Este es el código identificador del empleado. El prefijo treb: indica que pertenece al espacio de nombres de los trabajadores.
+    <add:codi>43201</add:codi>: Este es el código postal. El prefijo add: indica que pertenece al espacio de nombres de las direcciones.
+    <dep:codi>IT1</dep:codi>: Este es el código único del departamento. El prefijo dep: lo asocia correctamente a la sección de departamentos.

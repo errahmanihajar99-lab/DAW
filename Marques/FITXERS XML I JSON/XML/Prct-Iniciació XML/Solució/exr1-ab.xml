@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  1. Identificació d'elements i atributs en XML -->
+ <!--  a. Elements i atributs:
+    Elements: cotxes, nous, usats, cotxe.
+    Atributs: marca, model, color (tots pertanyen a l'element cotxe). -->
+
+ <!--  b. Atribut booleà "usat":
+
+        Avantatges: Simplifica l'estructura eliminant els nodes pare <nous> i <usats>.
+        Tota la informació del cotxe està en un sol lloc.
+
+        Inconvenients: És més difícil separar visualment o mitjançant algunes consultes ràpides les dues llistes. 
+        Si la distinció nou/usat és fonamental per a l'aplicació, l'estructura original és més clara.-->
+<cotxes>
+  <cotxe marca="seat" model="ibiza" color="blau" usat="false">T-8976-AW</cotxe>
+  <cotxe marca="opel" model="corsa" color="blanc" usat="false">Sense Matricular</cotxe>
+  <cotxe marca="renault" model="megane" color="gris" usat="true">1111BCC</cotxe>
+  <cotxe marca="opel" model="corsa" color="blanc" usat="true">9344BDF</cotxe>
+</cotxes>

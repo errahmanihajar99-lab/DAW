@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smartphones>
+  <dispositiu model="iPhone 15">
+    <so nom="iOS" versio="17"/>
+    <dimensions amplada="71.6" alcada="147.6" fons="7.8"/>
+    <pes unitat="g">171</pes>
+    <pantalla>2556 x 1179</pantalla>
+    <processador>A16 Bionic</processador>
+    <memoria unitat="GB">128</memoria>
+    <preu moneda="EUR">950</preu>
+  </dispositiu>
+  <dispositiu model="Pixel 8">
+    <so nom="Android" versio="14"/>
+    <dimensions amplada="70.8" alcada="150.5" fons="8.9"/>
+    <pes unitat="g">187</pes>
+    <pantalla>1080 x 2400</pantalla>
+    <processador>Tensor G3</processador>
+    <memoria unitat="GB">128</memoria>
+    <preu moneda="EUR">799</preu>
+  </dispositiu>
+</smartphones>

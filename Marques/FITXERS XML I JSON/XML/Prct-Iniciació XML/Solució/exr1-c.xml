@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!-- c. Codi sense atributs-->
+<cotxes>
+  <cotxe>
+    <estat>nou</estat>
+    <marca>seat</marca>
+    <model>ibiza</model>
+    <color>blau</color>
+    <matricula>T-8976-AW</matricula>
+  </cotxe>
+  </cotxes>
