@@ -1,0 +1,13 @@
+Some most popular Brawlers
+
+"Since Leon doesn't like hanging with other people much, his ability to become invisible comes in handy. Only his little sister, Nita, seems to get through to him."
+Leon is a Legendary Brawler who has moderate health and a high damage output at close range. He attacks by flicking out four Spinner Blades in a narrow cone that sweep and deal more damage close and less damage further away. Leon's Super makes him temporarily invisible to enemies.
+
+"Mortis had grand designs built around being a mortician and a vampire, but the fact that nobody is dying at Starr Park has put a huge damper on his plans."
+Mortis is a Mythic Brawler who has moderately high health and great mobility with his attack and a very fast movement speed at the expense of a low damage output and a very slow reload speed. He attacks by swinging his shovel and dashing a few tiles forward, dealing damage to enemies in his path.
+
+"Colt is the star attraction at Starr Park! His good looks, charisma and gun twirling tricks win over any audience, except maybe Shelly."
+Colt is a Rare Brawler who has low health but a high damage output. His attack is a long-ranged volley of six bullets. His Super is a longer-ranged volley of twelve piercing bullets that can destroy obstacles. His first Gadget, Speedloader, instantly reloads two of his ammo. 
+
+"Jessie is a prodigy who builds guns and gadgets from parts she finds in the junkyard. Maybe one day her mother Pam will see she can fend for herself!"
+Jessie is a Super Rare Brawler who has moderately low health, moderate damage and a normal reload speed. Her attack is an electric orb that bounces between enemies. Her Super places Scrappy, a turret with moderate health and damage output that excels at attacking, distracting, and defending. Her first Gadget, Spark Plug, creates a shockwave around Scrappy that slows down enemies.
