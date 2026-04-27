@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="taula_periodica">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="atom" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nom" type="xs:string"/>
+                            <xs:element name="simbol">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="3"/>
+                                        <xs:pattern value="[A-Z][a-z]{0,2}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="numero_atomic" type="xs:integer"/>
+                            <xs:element name="pes_atomic" type="xs:decimal"/>
+                            <xs:element name="punt_ebullicio">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:decimal">
+                                            <xs:attribute name="unitats" default="centígrads">  
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="centígrads"/>
+                                                        <xs:enumeration value="kelvin"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="densitat" type="xs:decimal"/>
+                        </xs:sequence>
+                        
+                        <xs:attribute name="estat" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="gasós"/>
+                                    <xs:enumeration value="liquid"/>
+                                    <xs:enumeration value="solid"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

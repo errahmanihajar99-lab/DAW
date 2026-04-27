@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<music>
+
+  <llista>
+    <nom>Hits 2026</nom>
+    <dataCreacio>2026-01-10</dataCreacio>
+
+    <canço>
+      <track>1</track>
+      <titol>Peace&amp;War</titol>
+      <autor>Artist A</autor>
+      <durada>3:45</durada>
+    </canço>
+
+    <canço>
+      <track>2</track>
+      <titol>Summer Vibes</titol>
+      <autor>DJ Cool</autor>
+      <durada>4:10</durada>
+    </canço>
+  </llista>
+
+  <llista>
+    <nom>Rock Classics</nom>
+    <dataCreacio>2025-12-01</dataCreacio>
+
+    <canço>
+      <track>1</track>
+      <titol>Bohemian Rhapsody</titol>
+      <autor>Queen</autor>
+      <durada>5:55</durada>
+    </canço>
+
+    <canço>
+      <track>2</track>
+      <titol>Hotel California</titol>
+      <autor>Eagles</autor>
+      <durada>6:30</durada>
+    </canço>
+  </llista>
+
+</music>

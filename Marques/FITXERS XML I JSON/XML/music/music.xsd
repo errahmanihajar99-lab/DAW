@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">  
+<!-- xmlns = XML Namespace (espace de noms)
+    xs = alias (raccourci) que tu choisis
+    http://www.w3.org/2001/XMLSchema = le langage officiel XSD-->
+
+  <xs:element name="music"> 
+    <xs:complexType>  
+    <!-- xs:complexType sert à définir un élément qui contient plusieurs sous-éléments et/ou attributs.-->
+    <!-- Contraire de xs:simpleType (qui contient juste une valeur simple : string, int, etc.)-->
+
+      <xs:sequence>
+      <!-- xs:sequence sert à dire que les éléments doivent apparaître dans un ordre précis et obligatoire.
+       Si tu changes l’ordre → XML invalide--> 
+
+        <xs:element name="llista" maxOccurs="unbounded">
+        <!-- maxOccurs sert à dire combien de fois un élément peut apparaître.--> 
+        <!-- maxOccurs="1" → une seule fois (par défaut)
+            maxOccurs="5" → maximum 5 fois
+            maxOccurs="unbounded" → autant de fois que tu veux (oui, sans limite, chaos contrôlé)-->   
+
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nom" type="xs:string"/>
+              <!-- xs:element sert à déclarer un élément XML (un tag)-->
+
+              <xs:element name="dataCreacio" type="xs:date"/>
+
+              <xs:element name="canço" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+
+                    <xs:element name="track" type="xs:int"/>
+                    <xs:element name="titol" type="xs:string"/>
+                    <xs:element name="autor" type="xs:string"/>
+                    <xs:element name="durada" type="xs:string"/>
+
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
+
+<!-- xs:restriction sert à limiter les valeurs possibles d’un type.
+
+👉 Tu pars d’un type existant (string, int, etc.)
+👉 Tu le “resserres” avec des règles
+exp;
+<xs:simpleType name="AgeType">
+  <xs:restriction base="xs:int">
+    <xs:minInclusive value="0"/>
+    <xs:maxInclusive value="120"/>
+  </xs:restriction>
+</xs:simpleType>-->
+
+
+
+<!-- xs:extension sert à créer un nouveau type en ajoutant des éléments ou attributs à un type existant.
+
+👉 Tu pars d’un type de base
+👉 Tu l’augmentes
+exp:
+<xs:complexType name="Personne">
+  <xs:sequence>
+    <xs:element name="nom" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Etudiant">
+  <xs:complexContent>
+    <xs:extension base="Personne">
+      <xs:sequence>
+        <xs:element name="universite" type="xs:string"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+
+extension fonctionne surtout avec :
+
+xs:complexContent
+héritage de types complexes-->
+
+
+<!-- minInclusive, maxInclusive ==> la valeur est autorisée
+     minExclusive, maxExclusive ==> la valeur est interdite-->

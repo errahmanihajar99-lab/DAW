@@ -1,0 +1,59 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- q-7 --> 
+    <xs:simpleType name="webType">
+      <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:element name="biblioteca">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="llibre" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <!-- q_6 -->
+                         <!-- màxim 50 caràcters per als elements <autor> i <titol>-->
+                        <xs:element name="autor">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:maxLength value="50"/>
+                                </xs:restriction>
+                            </xs:simpleType> 
+                        </xs:element>                      
+                        <xs:element name="titol">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:maxLength value="50"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>    
+                     </xs:sequence>
+                     <!-- q_5 -->
+                     <!-- codi i l'ubicació siguin atributs en lloc d'elements -->
+                      <xs:attribute name="codi">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:minInclusive value="1"/>
+                                <xs:maxInclusive value="9999"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                      </xs:attribute>
+                      <xs:attribute name="ubicacio">
+                        <xs:simpleType>
+                            <!-- q_8 -->
+                             <!-- usr patró -->
+                            <xs:restriction base="xs:string">
+                                <xs:pattern value="prestatge (1[0-4]|[1-9])"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                      </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- q-7 -->
+                 <!--  Afegeix l'element <web> -->
+                <xs:element name="web" type="webType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

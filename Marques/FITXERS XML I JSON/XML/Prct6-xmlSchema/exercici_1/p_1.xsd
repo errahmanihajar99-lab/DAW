@@ -1,0 +1,14 @@
+<!-- q_1 -->
+ <!-- esquema del XML-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="llibre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="autor" type="xs:string"/>
+        <xs:element name="titol" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

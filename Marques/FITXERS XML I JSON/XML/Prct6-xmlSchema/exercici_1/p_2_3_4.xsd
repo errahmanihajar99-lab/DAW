@@ -1,0 +1,51 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- q_2 -->
+ <!-- Craer biblior¡teca que tiene varios llibres -->
+    <xs:element name="biblioteca">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="llibre" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="autor" type="xs:string"/>
+                        <xs:element name="titol" type="xs:string"/>
+                        <!-- q_3 -->
+                         <!-- Afegeix l'etiqueta <codi>  que s'ha de correspondre amb un nombre comprés entre 1 i 9999-->
+                        <xs:element name="codi">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="1"/>
+                                    <xs:maxInclusive value="9999"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- q_4 -->
+                         <!-- Afegeix l'etiqueta <ubicacio>  que s'ha de correspondre amb un dels valors: "prestatge 1", "prestatge 2", etc. -->
+                        <xs:element name="ubicacio">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="prestatge 1"/>
+                                    <xs:enumeration value="prestatge 2"/>
+                                    <xs:enumeration value="prestatge 3"/>
+                                    <xs:enumeration value="prestatge 4"/>
+                                    <xs:enumeration value="prestatge 5"/>
+                                    <xs:enumeration value="prestatge 6"/>
+                                    <xs:enumeration value="prestatge 7"/>
+                                    <xs:enumeration value="prestatge 8"/>
+                                    <xs:enumeration value="prestatge 9"/>
+                                    <xs:enumeration value="prestatge 10"/>
+                                    <xs:enumeration value="prestatge 11"/>
+                                    <xs:enumeration value="prestatge 12"/>
+                                    <xs:enumeration value="prestatge 13"/>
+                                    <xs:enumeration value="prestatge 14"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

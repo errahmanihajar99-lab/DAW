@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taula_periodica>
+
+    <atom estat="gas">
+        <nom>Hidrògen</nom>
+        <simbol>H</simbol>
+        <numero_atomic>1</numero_atomic>
+        <pes_atomic>1.00794</pes_atomic>
+        <punt_ebullicio unitats="kelvin">20.28</punt_ebullicio>
+        <densitat unitats="grams/centimetres cúbics">0.0899</densitat>
+    </atom>
+
+    <atom estat="gas">
+        <nom>Heli</nom>
+        <simbol>He</simbol>
+        <numero_atomic>2</numero_atomic>
+        <pes_atomic>4.0026</pes_atomic>
+        <punt_ebullicio unitats="kelvin">4.216</punt_ebullicio>
+        <densitat unitats="grams/centimetres cúbics">0.1785</densitat>
+    </atom>
+
+</taula_periodica>
