@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<portfolio>
+    <about>
+        <name>
+            <first>HAJAR</first>
+            <last>Errahmani</last>
+        </name>
+
+        <photo></photo>
+        <description>Étudiante en informatique passionnée par l'art.</description>
+        <motivation>J'ai choisi cette carrière pour combiner créativité et technologie.</motivation>
+        <objectifs>Devenir développeuse et artiste reconnue.</objectifs>
+
+        <softSkills>
+            <skill>Travail en équipe</skill>
+            <skill>Communication</skill>
+            <skill>Créativité</skill>
+            <skill>Adaptabilité</skill>
+        </softSkills>
+
+        <hardSkills>
+            <skill>HTML</skill>
+            <skill>CSS</skill>
+            <skill>JavaScript</skill>
+            <skill>XML / XSLT</skill>
+        </hardSkills>
+
+        <personalParadigm>Vivre pleinement signifie apprendre constamment, créer avec passion et ne pas avoir peur de l’échec.</personalParadigm>
+    </about>
+
+    <resume>
+        <education>
+            <degree>
+                <name>Bac</name>
+                <type>sciences physiques et chimie</type>
+                <year>2016/2017</year>
+            </degree>
+
+            <degree>
+                <name>technicien specialiser</name>
+                <type>developpement web</type>
+                <year>en cours</year>
+            </degree>
+        </education>
+
+    </resume>
+</portfolio>

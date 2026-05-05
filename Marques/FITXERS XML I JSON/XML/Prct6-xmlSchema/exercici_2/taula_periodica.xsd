@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?> <!-- declare que c est un fichier XML -->
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="taula_periodica">
-        <xs:complexType>
-            <xs:sequence>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> <!-- On crée un schéma XSD -->
+<!-- xs = alias pour XML Schema, c est comme dire que je vait utiliser les regles du XML -->
+
+    <xs:element name="taula_periodica"><!-- Définit l’élément principal du XML -->
+        <xs:complexType><!-- conien des sous elements -->
+            <xs:sequence><!-- Les éléments doivent apparaître dans cet ordre -->
                 <xs:element name="atom" maxOccurs="unbounded">
+                    <!-- maxOccurs="unbounded" ça veut dire qu un element peut etre repeter plusieurs foix (illimite de foix)-->
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="nom" type="xs:string"/>
@@ -36,7 +39,6 @@
                             </xs:element>
                             <xs:element name="densitat" type="xs:decimal"/>
                         </xs:sequence>
-                        
                         <xs:attribute name="estat" use="required">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
